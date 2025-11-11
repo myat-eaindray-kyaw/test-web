@@ -1,0 +1,197 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    padding: 10px 0px;
+    background: #FFF5EE;
+    background: linear-gradient(90deg, rgba(255, 245, 238, 1) 0%, rgba(255, 250, 240, 1) 57%, rgba(255, 255, 240, 1) 100%);
+}
+
+.font-style-1 {
+    background: linear-gradient(90deg, #00dbde, #fc00ff);
+    text-transform: lowercase;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.menu-bar {
+    margin: auto;
+    width: 70%;
+}
+
+nav {
+    background-color: rgba(173, 216, 230, 0.3);
+    /* light blue mist */
+    color: #2f4f4f;
+    /* deep forest green for text */
+    border-radius: 25px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+    text-align: center;
+}
+
+nav a {
+    display: inline-block;
+    padding: 18px 30px;
+    font-weight: bold;
+
+}
+
+.greed-msg-box {
+    padding: 190px 0px;
+    display: flex;
+    gap: 70px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    animation: fade-out linear;
+    animation-timeline: scroll();
+
+}
+
+#greed-msg {
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    backdrop-filter: blur(10px);
+}
+
+#dev-img {
+    width: 300px;
+    height: 300px;
+    border-radius: 170px;
+
+}
+
+.myself {
+    padding: 20px;
+    text-align: left;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .2);
+    /*background-color: rgba(173, 216, 230, 0.3);  light blue mist */
+    color: #2f4f4f;
+    /* deep forest green for text */
+    border-radius: 10px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    width: fit-content;
+    align-items: center;
+    margin: auto;
+}
+
+
+
+.scroll-effect {
+    animation: fade-out linear;
+    animation-timeline: scroll();
+}
+
+.proj-scroll-effect {
+    animation: ffade-in linear;
+    animation-timeline: scroll();
+}
+
+.block-title {
+    text-align: center;
+    border: #2f4f4f 1px solid;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0px;
+    /* padding: 197px 0px; */
+
+}
+
+.show-block {
+    display: flex;
+}
+
+
+#food-order-img {
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+    width: 200px;
+    height: 200px;
+}
+
+#food-img {
+    height: 200px;
+    width: 200px;
+    border-radius: 15px;
+}
+
+.proj-box {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.proj-btn {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.btn {
+    border: #2f4f4f 1px solid;
+    border-radius: 3px;
+    padding: 5px;
+}
+
+.food-order-system {
+    width: fit-content;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .2);
+    color: #2f4f4f;
+    /* deep forest green for text */
+    border-radius: 10px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    padding: 10px;
+    text-align: center;
+}
+
+.bi-cart3 {
+    font-size: 40px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.projs {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+
+@keyframes fade-out {
+    from {
+        scale: 1;
+        opacity: 1;
+    }
+
+    to {
+        scale: .8;
+        opacity: 0;
+    }
+}
+
+@keyframes fade-in {
+    from {
+        scale: .8;
+        opacity: 0;
+    }
+
+    to {
+        scale: 1;
+        opacity: 1;
+    }
+}
